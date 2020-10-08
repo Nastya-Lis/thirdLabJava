@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">thirdLabJava</string>
+    <string name="Name">Name:</string>
+    <string name="SurName">SurName:</string>
+    <string name="Student">Student:</string>
+    <string name="Listener">Listener:</string>
+    <string name="Age">Age:</string>
+    <string name="Curse">Curse:</string>
+    <string name="University">University:</string>
+    <string name="Mark">Mark:</string>
+    <string name="Organization">Organization:</string>
+</resources>

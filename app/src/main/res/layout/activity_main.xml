@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/Name"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/nameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/SurName"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/surnameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/Age"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/ageId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/Curse"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/curseId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp" />
+
+
+    <Button
+        android:id="@+id/nextMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:onClick="nextClick"
+        >
+    </Button>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
