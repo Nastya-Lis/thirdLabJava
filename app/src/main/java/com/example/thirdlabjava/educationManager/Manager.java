@@ -24,7 +24,7 @@ import java.util.Random;
 import java.util.stream.Stream;
 
 public class Manager{
-    //public Person person;
+
     File file;
     public JsonManipulations jsonManipulations = new JsonManipulations();
 

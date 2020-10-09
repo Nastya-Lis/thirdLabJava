@@ -17,14 +17,12 @@ public class MainActivity extends AppCompatActivity {
     final String CURSEVALUE = "cursePerson";
 
     EditText name,surname,age,curse;
-
     String str;
-    //Bundle bundleHui;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-       /* if(bundleHui!=null){
-            savedInstanceState = bundleHui;
-        }*/
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -35,38 +33,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-   /* @Override
-    public void onSaveInstanceState(Bundle bundle) {
-
-        EditText editText = (EditText) findViewById(R.id.nameId);
-        str = editText.getText().toString();
-        bundle.putString(STRINGVALUE,str);
-        bundleHui = bundle;
-        super.onSaveInstanceState(bundle);
-    }
-
-    @Override
-    public void onRestoreInstanceState(Bundle bundle){
-        super.onRestoreInstanceState(bundle);
-
-        str = bundle.getString(STRINGVALUE);
-        EditText editText = (EditText) findViewById(R.id.nameId);
-        editText.setText(str);
-    }
-*/
-   private  void setValuesForPerson(){
-
-   }
-
     public void nextClick(View view) {
         EditText edit  = (EditText) findViewById(R.id.nameId);
-       // str = edit.getText().toString();
         Intent intent = new Intent(MainActivity.this, ChooseActivity.class);
         intent.putExtra(NAMEVALUE,name.getText().toString());
         intent.putExtra(SURNAMEVALUE,surname.getText().toString());
         intent.putExtra(AGEVALUE,age.getText().toString());
         intent.putExtra(CURSEVALUE,curse.getText().toString());
-      //  intent.putExtra("namee",str);
         startActivity(intent);
     }
 }
